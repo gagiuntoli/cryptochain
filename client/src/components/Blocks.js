@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Block from './Block';
+import { Link } from 'react-router-dom';
 
 class Blocks extends Component {
     state = { blocks: [] };
 
     componentDidMount() {
-        fetch('http://localhost:3000/api/blocks')
+        fetch(`${document.location.origin}/api/blocks`)
             .then(response => response.json())
             .then(json => this.setState({ blocks: json }));
     }
@@ -15,6 +16,7 @@ class Blocks extends Component {
         console.log('this.state', this.state);
         return (
             <div>
+                <div><Link to="/">Home</Link></div>
                 <h3>Blocks</h3>
                 {
                     this.state.blocks.map(block => {

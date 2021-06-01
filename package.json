@@ -27,11 +27,6 @@
     "redis": "^2.8.0"
   },
   "dependencies": {
-    "babel-core": "^6.26.3",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
     "body-parser": "^1.18.3",
     "core-js": "^3.13.1",
     "elliptic": "^6.5.4",
